@@ -17,7 +17,7 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll(".slide-in")
 
 const sectionOneOptions = {
-    rootMargin: "100px 0px 0px 0px"
+    rootMargin: "200px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {entries.forEach(entry => {
@@ -37,7 +37,7 @@ sectionOneObserver.observe(sectionOne);
 
 
 const appearOptions = {
-    threshold: 1
+    threshold: 0
 };
 
 const appearOnScroll = new IntersectionObserver(
@@ -63,3 +63,17 @@ const appearOnScroll = new IntersectionObserver(
             appearOnScroll.observe(slider);
         });
         
+
+
+        var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
