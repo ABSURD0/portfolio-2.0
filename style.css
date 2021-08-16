@@ -18,7 +18,7 @@
       align-items: center;
       background: transparent;
       color: white;
-      height: 10rem;;
+      height: 6rem;;
       width: 100%;
       letter-spacing: .2rem;
       transition: all 1s ease-in-out;
@@ -200,6 +200,9 @@
        padding-top: 30rem;
           background-image: linear-gradient(pink, lightpink, lightblue);
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-right: 7rem;
           
           
 
@@ -325,9 +328,9 @@
 
 
 .main-section{
-            height: 200vh;
+            height: 1200vh;
             width: 100%;
-            background-image: linear-gradient(to bottom right, wheat, lightblue, lightblue);
+            background-image: linear-gradient(to bottom right, wheat, lightblue, wheat, lightblue);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -541,6 +544,134 @@ text-transform: capitalize;
 
 
 
+
+
+.projects{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.projects-header{
+  font-size: 6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+text-transform: capitalize;
+margin-bottom: 1rem;
+letter-spacing: 1rem;
+margin-bottom: 1rem;
+}
+
+.projects-header-image{
+  width: 50rem;
+  height: 50rem;
+}
+
+.projects-sub-container{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.projects-sub-h2{
+font-size: 3.5rem;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 300;
+text-transform: capitalize;
+margin-bottom: 5rem;
+letter-spacing: .3rem;
+}
+
+.projects-sub-p{
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-bottom: 0rem;
+
+}
+
+.projects-sub-image{
+  width: 30rem;
+  height: 30rem;
+margin-bottom: 2rem;
+}
+
+
+
+.projects-sub-button{
+
+}
+
+.projects-sub-button:hover{
+
+}
+
+.projects-sub-button:active{
+
+}
+
+.projects-sub-button:after{
+
+}
+
+
+
+
+.work-together-container{
+  width: 95%;
+  height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.cloud-row-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.cloud-image{
+width: 20rem;
+height: 20rem;
+opacity: .7;
+}
+
+.cloud-image:nth-of-type(2n){
+  width: 15rem;
+  height: 15rem;
+  
+}
+
+.cloud-image:last-child{
+  width: 25rem;
+  height: 25rem;
+}
+
+
+.work-together-text{
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+text-transform: capitalize;
+margin-bottom: 1rem;
+letter-spacing: .4rem;
+}
+
+.work-together-image{
+width: 50rem;
+height: 50rem;
+}
 
 
 
