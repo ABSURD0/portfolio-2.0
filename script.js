@@ -14,7 +14,11 @@ const sectionOne = document.querySelector(".home-intro");
 
 
 const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll(".slide-in")
+const fadersLong = document.querySelectorAll('.fade-in-long');
+const bouncer = document.querySelectorAll('.bounce-in-top');
+const blinkIn = document.querySelectorAll('.flicker-in-1');
+const slideFromBack = document.querySelectorAll('.slide-in-elliptic-left-back');
+const sliders = document.querySelectorAll(".slide-in");
 
 const sectionOneOptions = {
     rootMargin: "200px 0px 0px 0px"
@@ -37,7 +41,8 @@ sectionOneObserver.observe(sectionOne);
 
 
 const appearOptions = {
-    threshold: 0
+    threshold: 0,
+    
 };
 
 const appearOnScroll = new IntersectionObserver(
@@ -59,21 +64,24 @@ const appearOnScroll = new IntersectionObserver(
             appearOnScroll.observe(fader);
         });
 
+        fadersLong.forEach(faderLong => {
+            appearOnScroll.observe(faderLong);
+        });
+
+        bouncer.forEach(bouncer => {
+            appearOnScroll.observe(bouncer);
+        });
+
+        blinkIn.forEach(blinker => {
+            appearOnScroll.observe(blinker);
+        });
+
+        slideFromBack.forEach(sFb => {
+            appearOnScroll.observe(sFb);
+        });
+
         sliders.forEach(slider => {
             appearOnScroll.observe(slider);
         });
         
 
-
-        var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
