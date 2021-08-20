@@ -317,6 +317,7 @@
 
     .video-header-container{
       width: 100%;
+      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -792,6 +793,7 @@ transform: scale(.9);
    flex-direction: column-reverse;
    justify-content: center;
    align-items: center;
+   
  }
   
   .projects-sub-h2{
@@ -915,7 +917,7 @@ transform: scale(.9);
 @media (max-width: 1200px){
 
 .learn{
-  height: 50rem;
+  height:35rem;
 }
 
   .learn-header{
@@ -980,7 +982,7 @@ transform: scale(.9);
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
  
 }
 
@@ -1032,7 +1034,10 @@ margin-bottom: 2rem;
 
   .work-together-container{
     width: 95%;
-    height: 50rem;
+    height: 30rem;
+margin-top: 0rem;
+margin-bottom: 0rem;
+justify-content: flex-start;
   
   }
   
@@ -1061,7 +1066,7 @@ margin-bottom: 2rem;
 
 
 
-
+}
 
 
 
@@ -1101,8 +1106,39 @@ opacity: .7;
   height: 25rem;
 }
 
+.margin-bottom-mobile-fix{
+  margin-bottom: 10rem;
+}
 
 
+@media (max-width: 500px){
+
+  .cloud-row-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .cloud-image{
+  width: 10rem;
+  height: 10rem;
+  opacity: .7;
+  }
+  
+  .cloud-image:nth-of-type(2n){
+    width: 5rem;
+    height: 5rem;
+    
+  }
+  
+  .cloud-image:last-child{
+    display: none;
+  }
+
+}
 
 
 
