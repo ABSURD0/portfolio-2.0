@@ -83,10 +83,12 @@
     }
     
     .dropdown-content a {
+      width: 100%;
       color: black;
       padding: 2rem 3rem;
       text-decoration: none;
       display: block;
+      text-align: center;
     }
     
     .dropdown-content a:hover {
