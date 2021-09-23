@@ -10,7 +10,7 @@ toggleButton.addEventListener('click', () => {
 
 
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".home-intro");
+const sectionOne = document.querySelector(".navbar-transform");
 
 
 const faders = document.querySelectorAll('.fade-in');

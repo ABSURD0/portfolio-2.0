@@ -169,6 +169,15 @@
       background-color: white;
       border-radius: 30%;
     }
+
+    .navbar-transform{
+      width: 100%;
+      height: 1rem;
+      top: 30rem;
+    
+      background-color: transparent;
+      position: absolute;
+    }
     
     @media (max-width: 1200px) {
       .navbar {
@@ -232,18 +241,32 @@
         z-index: 10;
       position: absolute;
       top: 1rem;
-       
-      }
+        }
+
+        .navbar-transform{
+          top: 15rem;
+        }
     }
 
-    @media (max-width: 414px){
+    @media (max-width: 500px){
 
       .brand-title{
         font-size: 1.6rem;
         margin-top: 1rem;
+        color: darkblue;
+      }
+      .navbar-transform{
+        top: -10rem;;
       }
 
+      .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: darkblue;
+        border-radius: 30%;
+      }
 
+     
     }
 
     @media (max-width: 280px){
@@ -513,9 +536,7 @@ text-transform: capitalize;
   margin-top: 2rem;
 }
 
-.main-video{
-margin-top: 6rem;
-}
+
 
 }
 
